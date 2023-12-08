@@ -26,3 +26,7 @@ By default the URL that gets copied to the clipboard and/or shared via the nativ
 | `copy-button`  | A string that is used for the copy button text. Defaults to "Copy"                                |
 | `share-text`   | A string that is use as the message by the native web share API. Defaults to the current page title               |
 | `share-button` | A string that is used for the share button text. Defaults to "Share"                              |
+
+## To-dos
+
+- [ ] ...
