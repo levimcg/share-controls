@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>share-controls element</title>
+  <style>
+    body {
+      padding: 4rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    body > * + * {
+      margin-top: var(--flow-space, 1.5rem);
+    }
+
+    :is(h1, h2, h3, h4) {
+      --flow-space: 3rem;
+    }
+  </style>
+</head>
+<body>
+  <h1><code>share-controls</code> element</h1>
+  <p>A Custom Element that adds progressively enhanced share buttons to your web page.</p>
+
+  <h2>Default usage</h2>
+  <share-controls
+  >
+    <p>Copy this URL to share: https://levimcg.com</p>
+  </share-controls>
+
+  <h2>Customized via attributes</h2>
+  <share-controls
+    url="https://levimcg.com"
+    share-button="Share article"
+    copy-button="Copy link to my cool article"
+    share-text="Share this article, please!"
+  >
+    <p>Copy this URL to share: https://levimcg.com</p>
+  </share-controls>
+
+  <script src="./share-controls.js"></script>
+</body>
+</html>
